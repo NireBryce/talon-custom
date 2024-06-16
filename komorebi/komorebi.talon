@@ -2,10 +2,10 @@ mode: command
 # tag: user.komorebi
 -
 
-
-wendy launch:               user.komorebic("komorebic start --whkd --config C:\Users\eocow\.config\komorebi.json")
-wendy kill confirm:         user.komorebic("komorebic stop") 
-wendy pause:                user.komorebic("komorebic pause")
+wendy start confirm:        user.komorebic_launch()
+wendy launch confirm:       user.komorebic_launch()
+wendy kill confirm:         user.komorebic("stop") 
+wendy pause:                user.komorebic("pause")
 wendy retile:               user.komorebic("retile")
 wendy workspace pause:      user.komorebic("toggle-pause")
 wendy workspace tiles:      user.komorebic("toggle-tiling")
