@@ -17,7 +17,7 @@ class Actions:
         """Sends a command to komorebic"""
         subprocess.check_output(f"komorebic.exe {command}", shell=True)
 
-    def launch_komorebi():
+    def launch_komorebic():
         """Bootstrap komorebic"""
         subprocess.run(f"komorebic.exe start --whkd --config {KOMO_CONFIG}")
     def launch_zebar():
