@@ -3,10 +3,10 @@ import pathlib
 from talon import Module, actions
 
 mod = Module()
-KOMO_CONFIG: str = pathlib.PureWindowsPath(
+KOMO_CONFIG_PATH: str = pathlib.PureWindowsPath(
     f"C:/Users/eocow/.config/komorebi.json"
 )
-ZEBAR_CONFIG: str = pathlib.PureWindowsPath(
+ZEBAR_PATH: str = pathlib.PureWindowsPath(
     f"C:/Users/eocow/_software_util/zebar/zebar_start.bat"
 )
 @mod.action_class
@@ -19,7 +19,7 @@ class Actions:
 
     def launch_komorebic():
         """Bootstrap komorebic"""
-        subprocess.run(f"komorebic.exe start --whkd --config {KOMO_CONFIG}")
+        subprocess.run(f"komorebic.exe start --whkd --config {KOMO_CONFIG_PATH}")
     def launch_zebar():
         """zebar"""
-        subprocess.check_output(ZEBAR_CONFIG)
+        subprocess.run(ZEBAR_PATH)
