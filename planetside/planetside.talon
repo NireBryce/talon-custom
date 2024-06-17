@@ -3,13 +3,13 @@ app: planetside
 
 
 # infil termouts
-term info one:
-term info two:
-term info three:
-term info four:
-term info five:
-term info six:
-term info seven:
+term info one:      key("f1 1")
+term info two:      key("f1 2")
+term info three:    key("f1 3")
+term info four:     key("f1 4")
+term info five:     key("f1 5")
+term info six:      key("f1 6")
+term info seven:    key("f1 7")
 
 # light assault termouts
 term light one:     key("f2 1")
